@@ -1,0 +1,102 @@
+/* ページ全体 */
+body {
+  font-family: "Comic Sans MS","Hiragino Meru Gothic ProN",sans-serif;
+  background: #fff0f5; /* 薄いピンク */
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+}
+
+p {
+  text-align: left;
+  padding: 0;
+  margin: 0 auto;
+  max-width: max-content;
+}
+
+/* コンテンツの枠 */
+.container {
+  width: 80%;
+  max-width: 600px;
+  margin: 0 auto;
+  background: #fff;
+  padding: 25px;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(255, 182, 193, 0.4);
+  border: 3px solid #ffb6c1;
+}
+
+/* 見出し */
+h1 {
+  color: #ff69b4;
+  font-size: 2.2em;
+  margin-bottom: 10px;
+}
+
+h2 {
+  font-size: 25px;
+  color: #ff69b4;
+  border-bottom: 2px dotted #ffc0cb;
+  display: inline-block;
+  padding-bottom: 5px;
+  margin: 20px auto 10px;
+}
+section {
+  text-align: center;
+  margin: 40px 0;
+}
+
+/* プロフィール画像 */
+.profile-img {
+  width: 150px;
+  border-radius: 50%;
+  margin: 15px 0;
+  border: 4px solid #ffb6c1;
+}
+
+/* 趣味リスト */
+ul {
+  list-style-type: none;
+  text-align: left;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 250px;
+}
+
+ul li {
+  margin: 8px 0;
+  padding-left: 30px;
+  position: relative;
+  line-height: 1.6em;
+}
+
+ul li::before {
+  content: "🎀";
+  position: absolute;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* フォーム部分 */
+
+form input, form textarea {
+  width: 90%;
+  padding: 8px;
+  margin: 5px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  padding: 10px 20px;
+  background: #4682b4;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #315f72;
+}
